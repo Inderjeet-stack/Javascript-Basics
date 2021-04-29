@@ -1,0 +1,187 @@
+ 
+<!-- Emmet plug-in -->
+
+ <!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Document</title>
+		</head>
+		<body>
+		
+		<!-- 0.for creating structure use this symbol "!" after writing this symbol just press tab and that's it
+		the structure will be in front of u.  -->
+
+		<!-- 1. write nav>ul>li  press tab that's it done.This ">" is forming an parent child relationship
+		here  where nav is grandparent,ul is parent and li child -->	
+
+			<nav>
+				<ul>
+					<li></li>
+				</ul>
+			</nav>
+
+<!--  one after other=>   div+p+i  this will create tag one after the other but not in parent child relation .
+	write div+p+i press tab and that;s done-->
+
+	<div>
+		
+	</div>
+	
+	<p>
+		
+	</p>
+
+	<h2>
+		
+	</h2>
+
+
+
+	<!--  div+div>p>span-->
+
+
+<div></div>
+<div>
+	<p><span></span></p>
+</div>
+
+
+<!--  we want that em is inside p tag as its sibling this (div+div>p>span>em>bq or div+div>p>span>em+bq this not gonna work for it for that we use "^" it takes bq one level up means to level (span) where it will be inside p tag not in em or span. to increase level keep adding ^. -->
+
+<!-- cursor should be at end before hitting tab.-->
+<div></div>
+<div>
+	<p>
+		<span><em></em></span>
+		<blockquote></blockquote>
+	</p>
+</div>
+
+<!-- div+div>p>span>em^^bq-->
+
+<div></div>
+
+<div>
+	<p><span><em></em></span></p>
+	<blockquote></blockquote>
+</div>
+
+<!-- div+div>p>span>em^^^bq-->
+
+<div></div>
+<div>
+	<p><span><em></em></span></p>
+</div>
+<blockquote></blockquote>
+
+
+
+
+	
+
+<!-- 2. id and class shortcuts-->
+
+ 
+<!--  for class write .classname press tab .
+   for id write #idname press tab  
+   remember the class and id will be automatically allocated to div without writing div like this div#idname ordiv.classname  -->
+
+    <div id="jeet"></div>
+	<div class="inder"></div>
+
+
+<!-- for having both id and class write form#idname.classname-->
+
+          <form action="" id="min" class="max"></form>
+
+
+   <!--adding multiple classes to single tag-->
+
+
+      <div class="class1 class2"></div>
+
+
+
+      <!-- 3. list and heading-->
+
+      <!-- for creating diff no of list use ul>li*no   (n0=number of list u want)-->
+
+
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
+<!-- for creating classes for each list  we use ul>li.item$*5.
+use two $ for starting numberng from 01,02 like that
+for decreasing order   use ul>li.item$@-*3   
+
+for starting from a particular no just add no instead of "-".  -->
+
+         <ul>
+         	<li class="item1"></li>
+         	<li class="item2"></li>
+         	<li class="item3"></li>
+         </ul>
+
+         <ul>
+         	<li class="item01"></li>
+         	<li class="item02"></li>
+         	<li class="item03"></li>
+         </ul>
+
+		  
+         <ul>
+         	<li class="item3"></li>
+         	<li class="item2"></li>
+         	<li class="item1"></li>
+         </ul>
+		
+
+		<ul>
+		 	<li class="item2"></li>
+		 	<li class="item3"></li>
+		 	<li class="item4"></li>
+		 	<li class="item5"></li>
+		 </ul> 
+
+
+         <!--create  diff heading with different title   h$[title=item$]{This is a heading $}*3 -->
+
+         <h1 title="item1">This is a heading 1</h1>
+         <h2 title="item2">This is a heading 2</h2>
+         <h3 title="item3">This is a heading 3</h3>
+
+
+<!-- 4. attributes ,link--->
+
+<!-- for a tag use a{text}-->
+
+	<a href="">me</a>
+
+          <a href="">click me</a>
+
+<!-- p with anchor tag  p{clink}>a{something}-->
+
+		<p>click<a href="">something</a></p>
+
+<!-- tag with attribute  p[title=something]-->
+
+		<p title="something"></p>
+
+<!-- td attribute  td[attributes]-->
+
+		 
+		 <td rowspan="2" colspan="2" title="td-tag"></td>
+
+
+<!-- 5. lorem ipsum  (the sample text)  p*2>lorem-->
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero commodi excepturi porro cupiditate, blanditiis minus, veritatis maiores obcaecati provident quae rerum accusantium nesciunt debitis! Eum id recusandae odit ipsa provident!</p>
+<p>Magni, doloribus? Omnis, similique vel optio nesciunt reprehenderit ut ab, in pariatur, praesentium voluptatem quos expedita quaerat minima. Possimus maxime magnam ullam doloremque tempore qui et nihil, incidunt, eveniet voluptatem?</p>
+        
+		</body>
+		</html>		
+
